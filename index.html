@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/17cead008e.js"></script>
+    <link rel="stylesheet" href="style.css">   
+    <title>Dark Mode</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <ul class="ulnav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dark</a></li>
+                <li><a href="#">Mode</a></li>
+                <li><a href="#">Exemple</a></li>                
+            </ul>
+        </nav>
+        
+        <input type="button"  id="darkmod"  class="ocult"> 
+        <label title="ligar/deligar modo noturno" class="labeldark" for="darkmod"><i class="fas fa-adjust"></i></label>           
+    </header>
+    
+    <section class="text">
+        <h2>Readme</h2><br>
+
+        <p>Esse exemplo de darkmode utiliza localStorage do navegador, ou seja mesmo dando f5, ou trocando de pagina o darkmode continua ativo.</p>
+
+        <p>
+            A meta tag 'theme-color' nada mais e que a cor da barrinha que aparece na parte de cima dos dispositivos mobile.            
+        </p>
+
+        <p>     
+            As cores da meta tag 'theme-color' podem ser alteradas por qualquer outra cor em darkmode.js <br>
+            Sendo: <br>
+            clearcolor (A cor do modo Claro)<br>
+            darkcolor (A cor do modo Dark)
+
+        </p>
+
+        <p>
+            Enquanto no css a classe :root e responsavel pelas cores, fontes etc... do modo claro e a classe .darkmode do modo escuro, como pode ver no arquivo style.css desse projeto.
+        </p>
+
+        <br>
+        <hr><br>
+
+        <img class="imgmeta" src="https://developers.google.com/web/updates/images/2014/11/theme-color-ss.png" alt="">
+        <h2>Text Exemple</h2><br>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus at repudiandae blanditiis sed iure mollitia delectus? Natus quisquam illum repellendus, quasi dignissimos aliquam facilis doloremque eos at? Similique, tempore magnam.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum minus laudantium vel nulla quibusdam ratione, quo, eligendi magni animi tempore ipsa. Ut quasi, accusantium explicabo voluptatem rem nostrum tempora iure. 
+        </p>      
+        
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus at repudiandae blanditiis sed iure mollitia delectus? Natus quisquam illum repellendus, quasi dignissimos aliquam facilis doloremque eos at? Similique, tempore magnam.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum minus laudantium vel nulla quibusdam ratione, quo, eligendi magni animi tempore ipsa. Ut quasi, accusantium explicabo voluptatem rem nostrum tempora iure. 
+        </p>     
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus at repudiandae blanditiis sed iure mollitia delectus? Natus quisquam illum repellendus, quasi dignissimos aliquam facilis doloremque eos at? Similique, tempore magnam.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum minus laudantium vel nulla quibusdam ratione, quo, eligendi magni animi tempore ipsa. Ut quasi, accusantium explicabo voluptatem rem nostrum tempora iure. 
+        </p>     
+    </section>
+
+    <footer>
+       <p>Dark mode by <a href="https://warleyrodrigues.net">Warley Rodrigues</a></p>
+    </footer>
+
+    <script src="/darkmode.js"></script>
+</body>
+</html>

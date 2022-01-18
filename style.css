@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+/* configuracoes de cores... etc dark mod desligado */
+:root {
+    --scrollbar: rgb(107, 107, 107);
+    --text: black;
+    --font: 'Source Code Pro';
+    --body: rgb(248, 248, 248);
+    --header: rgb(211, 211, 211);
+    --footer: rgb(226, 226, 226);
+}
+
+/* configuracoes de cores... etc dark mod ligado */
+.darkmode {
+    --scrollbar: rgb(36, 36, 36);
+    --text: rgb(207, 207, 207);
+    --font: 'Source Code Pro';
+    --body: rgb(20, 20, 20);
+    --header: rgb(41, 41, 41);
+    --footer: rgb(31, 31, 31);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: var(--scrollbar);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: rgba(161, 89, 87, 0.959);
+}
+
+body {
+    background: var(--body);
+}
+
+header {
+    min-height: 50px !important;
+    background: var(--header);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5%;
+}
+
+section {
+    min-height: 95vh !important;
+}
+
+footer {
+    color: var(--text);
+    font-family: var(--font);
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: var(--footer);
+}
+
+footer a {
+    color: rgb(160, 65, 65);
+    text-decoration: none;
+}
+
+.labeldark {
+    cursor: pointer;
+    color: var(--text);
+    font-size: 20px;
+    padding-top: 3px;
+}
+
+.labeldark:hover {
+    color: rgb(138, 69, 69);
+}
+
+.ocult {
+    display: none;
+}
+
+.ulnav {
+    display: flex;
+}
+
+.ulnav li {
+    list-style: none;
+    padding: 0px 10px;
+}
+
+.ulnav a {
+    text-decoration: none;
+    color: rgb(151, 76, 76);
+    font-family: var(--font);
+    font-size: 18px;
+}
+
+.ulnav a:hover {
+    color: rgb(60, 79, 160);
+}
+
+.text {
+    margin-top: 25px !important;
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 95%;
+    color: var(--text);
+    font-family: var(--font);
+}
+
+.text p {
+    padding-bottom: 15px;    
+}
+
+.imgmeta{   
+    float: left; 
+    margin-right: 15px;
+    object-fit:cover;
+    height: 400px;
+}
