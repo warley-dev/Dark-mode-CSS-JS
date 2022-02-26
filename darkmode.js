@@ -1,30 +1,26 @@
-var clearcolor = '#ffffff'
-var darkcolor = '#141414'
+themeColorClear = "#ffffff"
+themeColorDark = "#191919"
 
-if(localStorage.getItem('idmode')==null){
-    document.head.innerHTML = document.head.innerHTML + `<meta name="theme-color" content="${clearcolor}">`
-}
-  
-  const nightMode = document.querySelector('#darkmod')
+
+const nightMode = document.querySelector('#darkmod')
+const nightModeStorage = localStorage.getItem('idmode')
+
   nightMode.addEventListener('click', () => {
-    document.documentElement.classList.toggle('darkmode')
-    
-    if (document.documentElement.classList.contains('darkmode')) {
-      localStorage.setItem('idmode', true)
-      document.head.innerHTML = document.head.innerHTML + `<meta name="theme-color" content="${darkcolor}">`
-      document.querySelector("[name='theme-color']").remove() 
-      return
-    }
+      document.documentElement.classList.toggle('darkmode')
+      
+      if(document.documentElement.classList.contains('darkmode')) {
+        localStorage.setItem('idmode', true)       
+        document.querySelector("[name='theme-color']").content = themeColorClear;  
+        return
+      }
 
-    localStorage.removeItem('idmode')
-    document.querySelector("[name='theme-color']").remove()
-    document.head.innerHTML = document.head.innerHTML + `<meta name="theme-color" content="${clearcolor}">`
-  })
+      localStorage.removeItem('idmode')   
+      document.querySelector("[name='theme-color']").content = themeColorDark;   
+  })    
   
-  const nightModeStorage = localStorage.getItem('idmode')
-  if (nightModeStorage) {
-      document.documentElement.classList.add('darkmode')
-      document.head.innerHTML = document.head.innerHTML + `<meta name="theme-color" content="${darkcolor}">`    
-      nightMode.checked = true
+  if(nightModeStorage) {
+      document.documentElement.classList.add('darkmode')     
+      nightMode.checked = true    
+      document.querySelector("[name='theme-color']").content = themeColorClear;  
   }
   
